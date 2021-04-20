@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
+        *,body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: whitesmoke;
+            font-family: 'Montserrat', sans-serif;
+        }
+        header{
+            height:12vh;
+            background: whitesmoke;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding-top:0.25%;
+            width:90%;
+            margin-left:5%;
+            margin-right:5%;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+        .bar{
+            display: none;
+        }
+        .logo{
+            margin-left:2vw;
+
+        }
+        .res-image {
+            width:11vw;
+            height:auto;
+            min-width: 145px;
+        }
+        nav{
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+        nav ul li{
+            padding: 0 2vw;
+        }
+        nav ul li a{
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 0px;
+            letter-spacing: 0.06em;
+            color:#05aa78;
+        }
+        #contact-button {
+            width:auto;
+            color: whitesmoke;
+            background-color: #05aa78;
+            padding: 12% 12%;
+            border-radius: 5px;
+            border:#05aa78;
+            border-style:solid;
+            border-width: 2px;
+        }
+        #contact-button:hover {
+            color:#05aa78;
+            background-color: whitesmoke;
+        }
+        .back-image {
+  background-image: url("homee.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  align-items:center;
+        }
+</style>
+<body>
+    <div class="back-image">
+    <header>
+        <div class="logo">
+            <a href="https://www.testright.in/" class="logo" ><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">APPLICATIONS</a></li>
+                <li><a href="#">CUSTOMERS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESOURCES</a></li>
+                <li><a href="#" id="contact-button">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+</body>
+</html>
