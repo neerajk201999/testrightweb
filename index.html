@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
+        *,body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: whitesmoke;
+            font-family: 'Montserrat', sans-serif;
+        }
+        header{
+            height:65px;
+            background: whitesmoke;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+
+            width:90%;
+            margin-left:5%;
+            margin-right:5%;
+            flex:auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+        }
+        .bar{
+            display: none;
+        }
+        .logo{
+            margin-left:2vw;
+
+        }
+        .res-image {
+            width:11vw;
+            height:auto;
+            min-width: 145px;
+        }
+        nav{
+            margin: 0 auto;
+            padding-top: 2px;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+        nav ul li{
+            padding: 0 2vw;
+        }
+        nav ul li a{
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 0px;
+            letter-spacing: 0.06em;
+            color:#05aa78;
+        }
+        #linehov::after {
+            content: ' ';
+            display:block;
+            width:0;
+            height: 2px;
+            background: #05aa78;
+            transition: width 0.3s ;
+        }
+        #linehov:hover::after {
+            width:100%;
+            transition: width 0.3s ;
+        }
+        #contact-button {
+            width:auto;
+            color: whitesmoke;
+            background-color: #05aa78;
+            padding: 12% 12%;
+            border-radius: 5px;
+            border:#05aa78;
+            border-style:solid;
+            border-width: 2px;
+        }
+        #contact-button:hover {
+            color:#05aa78;
+            background-color: whitesmoke;
+        }
+        .back-image {
+  background-image: url("homee.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 90vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  align-items:center;
+        }
+/*
+        .container h2 {
+  padding-left:150px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.space-holder {
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 5px;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sample-card {
+  position: relative;
+  height: 325px;
+  width: 325px;
+  background-color: #05aa78;
+  margin-right: 75px;
+  flex-shrink: 0;
+  color:white;
+  text-align: center;
+}
+.sample-card:hover {
+    background-color: #5fa38f;
+}
+*/
+
+.grid1 {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:60px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    
+}
+.grid1 > article{
+    width:300px;
+    height:300px;
+    background-color: #05aa78;
+    align-items: center;
+    border-radius:15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.25);;
+}
+.container1
+{  
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.products
+{
+    text-align:center;
+}
+.products h2 {
+    background-color:#7a9990;
+}
+</style>
+
+
+<body>
+    <div class= "main-wrapper">
+    <div class="back-image">
+    <header>
+        <div class="logo">
+            <a href="https://www.testright.in/" class="logo" ><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="linehov">PRODUCTS</a></li>
+                <li><a href="#" id="linehov">APPLICATIONS</a></li>
+                <li><a href="#" id="linehov">CUSTOMERS</a></li>
+                <li><a href="#" id="linehov">ABOUT</a></li>
+                <li><a href="#" id="linehov">RESOURCES</a></li>
+                <li><a href="#" id="contact-button">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header> 
+    </div>
+    
+    
+
+    <div class="wrapper1">
+        <div class="products">
+           <h3> OUR PRODUCTS</h3>
+           <h2>SOLIDS | LIQUIDS | SPECTROMETER |</h2>
+        </div>
+        <div class="container1">
+            <main class="grid1">
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 1</h3>
+                        <button>Button 1</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 2</h3>
+                        <button>Button 2</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 3</h3>
+                        <button>Button 3</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 4</h3>
+                        <button>Button 4</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 5</h3>
+                        <button>Button 5</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 6</h3>
+                        <button>Button 6</button>
+                    </div>
+                </article>
+            </main>
+
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>
