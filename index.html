@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class= "main-wrapper">
+    <div class="back-image">
+    <header>
+        <div class="logo">
+            <a href="https://www.testright.in/" class="logo" ><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+        </div>
+        <nav>
+            <div class="nav-mobile" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#" id="linehov">PRODUCTS</a></li>
+                <li><a href="#" id="linehov">APPLICATIONS</a></li>
+                <li><a href="#" id="linehov">CUSTOMERS</a></li>
+                <li><a href="#" id="linehov">ABOUT</a></li>
+                <li><a href="#" id="linehov">RESOURCES</a></li>
+                <li><a href="#" id="contact-button">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header> 
+    </div>
+    
+    
+ 
+
+    <div class="wrapper1">
+        <div class="products">
+           <h1> Our Products </h1>
+           <h2> Solids | Liquids | Customized Spectrometers | </h2>
+        </div>
+        <div class="container1">
+            <main class="grid1 reveal">
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 1</h3>
+                        <button>Button 1</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 2</h3>
+                        <button>Button 2</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 3</h3>
+                        <button>Button 3</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 4</h3>
+                        <button>Button 4</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 5</h3>
+                        <button>Button 5</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <div class="text">
+                        <h3>Card 6</h3>
+                        <button>Button 6</button>
+                    </div>
+                </article>
+            </main>
+
+        </div>
+        
+    </div>
+
+
+
+    <div class="wrapper2">
+        <div class="associates">
+            <h1> OUR ASSOCIATES </h1>
+        </div>
+        <hr>
+        <div class="associate-logos">
+            <div class=circle1>
+
+            </div>
+            <div class=circle1>
+                
+            </div>
+            <div class=circle1>
+                
+            </div>
+            <div class=circle1>
+                
+            </div>
+        </div>
+
+       
+        <div class= "banner1">
+
+        </div>
+
+        <div class="container2">
+        <div class= "grid2 reveal">
+            <div class="card2">
+
+            </div>
+            <div class="card2">
+
+            </div>
+            <div class="card2">
+
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+
+<div class="cust-app-image">
+     <img src=""alt="">
+</div>
+
+
+<section class="container4">
+  
+ 
+    <div class="scrolling-wrapper-flexbox" id="container4">
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+      <div class="card7"><h2>Card</h2></div>
+    </div>
+    
+    <button class="prev" type="button" onclick="slide('left')">Prev</button>
+  <button class="next" type="button" onclick="slide('right')">Next</button>
+  </section>
+
+<footer>
+    <div class="grid-foot">
+        <div class="card3" id="foot-social">
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="card3" id="foot-logo">
+            <a href="https://www.testright.in/" class="logo" ><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+        </div>
+        <div class="card3" id="foot-address">
+            <h3>CONTACT</h3>
+            <h4>TESTRIGHT PVT. LTD.<br> 204, SECTOR 9, VASUNDHARA,<br> GHAZIABAD, UP - 201012, INDIA
+            </h4>
+        </div>
+    </div>
+</footer>
+<script>
+    function slide(direction){
+    var container = document.getElementById('container4');
+    scrollCompleted = 0;
+    var slideVar = setInterval(function(){
+        if(direction == 'left'){
+            container.scrollLeft -= 15;
+        } else {
+            container.scrollLeft += 15;
+        }
+        scrollCompleted += 15;
+        if(scrollCompleted >= 100){
+            window.clearInterval(slideVar);
+        }
+    }, 35);
+}
+
+</script>
+<script>
+    $(document).ready(function(){
+	$('#nav-toggle').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+</script>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+<script>
+
+  $(document).ready(function(){
+  $("#nav-toggle").click(function(){
+    $("nav ul").slideToggle();
+  });
+});
+</script>
+</div>
+</body>
+</html>
