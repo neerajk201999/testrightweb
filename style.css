@@ -41,7 +41,7 @@ body{
     border-radius: 50%;
     position: relative;
     bottom: 10px;
-    left: 48vw;
+    left: 47vw;
     font-size: 20px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
@@ -90,7 +90,7 @@ body{
 
 .back-text-container {
   margin-top:17vh;
-  margin-left:8.5vw;
+  margin-left:7.7vw;
   width:32vw;
   min-width: 300px;
   color: white;
@@ -149,7 +149,7 @@ nav ul li a:visited:hover {
         }
 nav ul li a:not(:only-child):after {
           padding-left: 2px;
-          content: '▾';
+          content: ' ▾';
 }
 nav ul li ul li {
         min-width: 190px;
@@ -273,7 +273,7 @@ nav ul li ul li  a {
 
 /* 6 CARDS-->*/
 .wrapper1{
-  width: 90%;
+  width: 99.2%;
   margin: auto;
 }
 
