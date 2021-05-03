@@ -41,7 +41,7 @@ body{
     border-radius: 50%;
     position: relative;
     bottom: 10px;
-    left: 50%;
+    left: 48vw;
     font-size: 20px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
