@@ -933,6 +933,7 @@ align-content: center;
   .card3:nth-child(4) {
       text-align: right;
       flex: 40%;
+      margin-right: 25px;
   }
   .card3:nth-child(4) h5 {
       color: #00A2EC;
@@ -966,7 +967,7 @@ align-content: center;
   
   }
   .card3{
-    margin: 50px 0;
+    margin: 50px 5px;
     position: relative;
     padding: 20px;
   }
