@@ -777,15 +777,28 @@ align-content: center;
     color:#62668A;
 
 }
-.review button {
+
+
+.review button a
+{
+    text-decoration: none;
+    color:#04aa79;
+}
+.review button:hover a{
+    color: white;
+    background-color: #04aa79;
+}
+.review button{
     color:#04aa79;
     font-size: 17px;
     border-width: 2px;
-    padding:5px;
-    border-radius: 25px;
+    padding:3px 6px;
+    border-radius: 23px;
     background-color: white;
     margin-top: 30px;
+    border-style: solid ;
     border-color: #04aa79;
+
 }
 .review button:hover {
     color:white;
