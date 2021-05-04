@@ -356,6 +356,7 @@ transition: .4s ease all;
 }
 .grid1 > article:hover{
   opacity: 0.7;
+  box-shadow: 0px 19px 30px #484a4e8c; ;
 }
 .grid1 > article:hover{
   background-color: #04aa79;
@@ -555,7 +556,6 @@ margin-right: auto;
 background-color: #FFFFFF;
 box-shadow: 0px 3px 6px #CCD9EE8C;
 }
-
 .container2
 {  
 margin-top: -110px;
@@ -703,7 +703,9 @@ align-content: center;
  .scrolling-wrapper-flexbox::-webkit-scrollbar {
     display: none;
   }
-
+.card7:hover {
+    box-shadow: 5px 15px 20px #97989b8c; 
+}
 .container4{
  width:auto;
  margin-right:1vw;
