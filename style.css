@@ -856,12 +856,16 @@ align-content: center;
         font-family: 'Nunito Sans', sans-serif;
         margin-top:7.5px;
       }
+      .left-sec button:hover {
+        color: white;
+        background-color: #04aa79;
+      }
       .left-sec button a{
           text-decoration: none;
           color: #04aa79;
       }
       
-      .left-sec button:hover{
+      .left-sec button a:hover{
         color: white;
         background-color: #04aa79;
       }
@@ -896,6 +900,10 @@ align-content: center;
         font-family: 'Nunito Sans', sans-serif;
         margin-top:7.5px;
         margin-left:34%;
+      }
+      input[type=submit]:hover {
+        color: white;
+        background-color: #04aa79;
       }
 
 
