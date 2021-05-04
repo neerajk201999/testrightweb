@@ -286,15 +286,15 @@ nav ul li ul li  a {
 .grid1 {
 display:grid;
 grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-gap:7vw;
+gap:6vw;
 margin-left: auto;
 margin-right: auto;
 width: 100%;
 
 }
 .grid1 > article{
-width:310px;
-height:330px;
+width:335px;
+height:350px;
 background-color: white;
 align-items: center;
 border-radius:30px;
@@ -320,6 +320,19 @@ transition: .4s ease all;
 }
 .grid1 > article:hover .card img{
   border: 3px solid #04aa79;
+  opacity:1;
+  background: none;
+  border-radius:50%;
+  border-width: 3px;
+  padding: 5px;
+  width:130px;
+  height:130px;
+  margin:auto;
+  text-align: center;
+  border-style:solid;
+  border-color:#04aa79;
+  display:block;
+  margin-top:16.7%;
 }
 .grid1 > article h3 {
   text-align:left;
@@ -354,12 +367,12 @@ transition: .4s ease all;
   font-size: 25px;
   color: #333;
 }
-.grid1 > article:hover{
-  opacity: 0.7;
-  box-shadow: 0px 19px 30px #484a4e8c; ;
+.grid1 > article:hover .card img {
+   opacity: 0.7;
 }
 .grid1 > article:hover{
-  background-color: #04aa79;
+  background-color: rgba(4, 170, 121, 0.7);
+  box-shadow: 0px 15px 20px #aaabad8c; 
   z-index: 999;
   color: #fff;
 }
@@ -679,7 +692,7 @@ align-content: center;
   text-align: center;
   box-shadow:0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius:30px;
-  box-shadow: 0px 10px 25px #CCD9EE8C;
+  box-shadow: 0px 10px 25px #ccd9eece;
   width: 300px;
   height: 300px;
   background: white;
@@ -831,7 +844,7 @@ align-content: center;
     }
     .container6 {
         width:100%;
-        background-image: url("./5.jpg");
+        background-image: url("./5.png");
         display: flex ;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -958,9 +971,16 @@ align-content: center;
       flex: 40%;
       margin-right: 25px;
   }
-  .card3:nth-child(4) h5 {
+  .card3:nth-child(4) h5 a{
       color: #00A2EC;
+      text-decoration: none;
+      padding-top:15px;
+      padding-bottom:15px;
+      font-size: medium;
   }
+  .card3:nth-child(4) h5 {
+    color: #00A2EC;
+}
   .card3:nth-child(4) h4 {
       color: #62668A;
   }
@@ -986,7 +1006,7 @@ align-content: center;
   .social-button {
     position:absolute;
     right:20px;
-    top:180px;
+    top:200px;
   
   }
   .card3{
@@ -995,7 +1015,8 @@ align-content: center;
     padding: 20px;
   }
   .card3 h4{
-      padding-bottom:5px;
+      padding-bottom:10px;
+      padding-top: 10px;
   }
   .card3 ul li{
     list-style: none;
