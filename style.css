@@ -92,7 +92,7 @@ body{
 }
 
 .back-text-container {
-  margin-top:19vh;
+  margin-top:21vh;
   margin-left:auto;
   margin-right: auto;
   width:37vw;
@@ -101,13 +101,13 @@ body{
   text-align: center;
 }
 .back-text-container h2 {
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   text-align: center;
 }
 .back-text-container h1 {
   line-height: 36px;
   color:white;
-  padding-bottom: 14px;
+  padding-bottom: 28px;
   text-align: center;
 }
 .typewrite .wrap {
@@ -706,17 +706,17 @@ align-content: center;
 .scrolling-wrapper-flexbox .card7 {
     flex: 0 0 auto;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 .card7 {
   text-align: center;
-  box-shadow:0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius:30px;
-  box-shadow: 0px 10px 25px #ccd9eece;
-  width: 300px;
-  height: 300px;
+  box-shadow: 0px 7px 20px #CCD9EE8C;
+  width: 310px;
+  height: 310px;
   background: white;
   position: relative;
+  margin-top: 12px;
 }
 .card7 h4 {
   position:absolute;
@@ -737,7 +737,7 @@ align-content: center;
 }
 .scrolling-wrapper-flexbox {
   height: auto;
-  min-height: 350px;
+  min-height: 370px;
   width: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -757,7 +757,7 @@ align-content: center;
 
 .prev-next-button{
   margin-bottom: 50px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .prev,.next{
   text-align: center;
