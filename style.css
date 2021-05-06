@@ -95,12 +95,18 @@ body{
   min-width: 300px;
   color: white;
 }
-.back-text-container h1 {
-  padding-bottom: 3px;
+.back-text-container h2 {
+  padding-bottom: 8px;
 }
-.back-text-container p {
+.back-text-container h1 {
   margin-right:5vw;
-  line-height: 26px;
+  line-height: 36px;
+  color:white;
+  padding-bottom: 12px;
+}
+.typewrite {
+  color:white;
+  text-decoration: none;
 }
 .back-text-container button{
   color: #04aa79;
@@ -396,7 +402,7 @@ font-size: 14px;
 line-height: 28px;
 letter-spacing: 0;
 text-align:left;
-margin-left: 5vw;
+margin-left: 7vw;
 color:black;
 width:fit-content;
 }
@@ -417,7 +423,7 @@ line-height: 28px;
 letter-spacing: 0;
 color: #58595B;
 text-align:left;
-margin-left: 5vw;
+margin-left: 7vw;
 margin-top: 15px;
 
 }
