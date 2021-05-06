@@ -104,6 +104,9 @@ body{
   color:white;
   padding-bottom: 12px;
 }
+.typewrite .wrap {
+  color:white;
+}
 .typewrite {
   color:white;
   text-decoration: none;
