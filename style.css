@@ -61,6 +61,9 @@ body{
         min-width: 145px;
         vertical-align: middle;
     }
+    .res-image:hover {
+      width:13vw;
+    }
 
  .brand a,.brand a:visited {
     color: black;
@@ -89,20 +92,23 @@ body{
 }
 
 .back-text-container {
-  margin-top:17vh;
-  margin-left:7.7vw;
-  width:32vw;
+  margin-top:19vh;
+  margin-left:auto;
+  margin-right: auto;
+  width:37vw;
   min-width: 300px;
   color: white;
+  text-align: center;
 }
 .back-text-container h2 {
-  padding-bottom: 8px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .back-text-container h1 {
-  margin-right:5vw;
   line-height: 36px;
   color:white;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
+  text-align: center;
 }
 .typewrite .wrap {
   color:white;
@@ -112,14 +118,14 @@ body{
   text-decoration: none;
 }
 .back-text-container button{
-  color: #04aa79;
-  background-color: white;
-  padding: 5px 10px;
+  color:white;
+  background-color:  #04aa79;
+  padding: 6px 11px;
   border-radius: 22px;
   border:#04aa79;
   border-style:solid;
   border-width: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.5px;
   font-family: 'Nunito Sans', sans-serif;
@@ -127,8 +133,8 @@ body{
 }
 
 .back-text-container button:hover{
-  color: white;
-  background-color: #04aa79;
+  color: #04aa79;
+  background-color: white;
 }
 nav {
   float: right;
