@@ -707,14 +707,22 @@ align-content: center;
   background: white;
   position: relative;
 }
-.card7 h2 {
+.card7 h4 {
   position:absolute;
-  top:10px;
-  left:40%;
+  top:35px;
+  left:12%;
+  color: #04aa79;
+  font-weight: 400;
+  font-size:14px;
+  
 }
 .card7 p{
   position:absolute;
-  top:60px;
+  top:80px;
+  left:6.6%;
+  text-align: center;
+  margin: auto;
+  padding-right: 6.6%;
 }
 .scrolling-wrapper-flexbox {
   height: auto;
