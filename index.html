@@ -200,24 +200,27 @@
     </div>
 
     <div class="banner1">
-
+        <img src="./banner1.jpg" alt="image" id="banner1">
     </div>
 
     <div class="container2">
         <div class="grid2 reveal">
-            <div class="card2">
+
+            <div class="card2" id="raman" onmouseover="raman()">
                 <img src="./Raman.png" alt="">
                 <h5>RAMAN</h5>
                 <p>It is critical for industries nowadays to have accurate process information at the correct time and spectroscopy is an important tool used in process control.
                 </p>
             </div>
-            <div class="card2">
+
+            <div class="card2" id="dip" onmouseover="dip()">
                 <img src="./Dip-probe.png" alt="">
                 <h5>DIP-PROBE</h5>
                 <p>This is the area where great efforts were made seeking answers for some of the biggest challenges for Human kind.
                 </p>
             </div>
-            <div class="card2">
+
+            <div class="card2" id="pcr" onmouseover="pcr()">
                 <img src="./Recycled PCR.png" alt="">
                 <h5>PCR% IN RECYCLED PLASTIC</h5>
                 <p>Air and water quality control was never so important as nowadays because the global industrialization and consumption.
@@ -226,7 +229,6 @@
         </div>
     </div>
     <!--END OF APPLICATIONS SECTION -->
-
 
     <!--UPDATES SLIDER START -->
 
@@ -242,18 +244,33 @@
             <span class="next" onclick="slide('right')"><i class="fas fa-arrow-right"></i></span>
         </div>
         <div class="scrolling-wrapper-flexbox" id="container4">
+
             <div class="card7">
-                <h4>UPDATE :</h4>
+                <h5><i class="fas fa-edit"></i> UPDATE :</h5>
+                <div class="icon">
+                    <span style="font-size:35px;color: rgb(31, 141, 95);"><i class="fas fa-briefcase"></i></span>
+                    <h4>We Are Hiring</h4>
+                </div>
                 <p>The world is color. For companies, color consistency is a key The world is color. For companies, color consistency is a key
                 </p>
             </div>
+
             <div class="card7">
-                <h4>UPDATE :</h4>
+                <h5><i class="fas fa-blog"></i> BLOG :</h5>
+                <div class="icon">
+                    <span style="font-size:35px;color: gold"><i class="fas fa-trophy"></i></span>
+                    <h4>Testright Wins BioAsia Award</h4>
+                </div>
                 <p>The world is color. For companies, color consistency is a key The world is color. For companies, color consistency is a key
                 </p>
             </div>
+
             <div class="card7">
-                <h4>UPDATE :</h4>
+                <h5><i class="fas fa-blog"></i> BLOG :</h5>
+                <div class="icon">
+                    <span style="font-size:35px;color: rgb(66, 154, 189)"><i class="fas fa-search"></i></span>
+                    <h4>Blood Testing</h4>
+                </div>
                 <p>The world is color. For companies, color consistency is a key The world is color. For companies, color consistency is a key
                 </p>
             </div>
@@ -408,6 +425,18 @@
         <h4><span>&#169;</span> 2021 TESTRIGHT</h4>
     </div>
 
+
+    <script>
+        $("#dip").hover(function() {
+            $(".banner1 img").attr("src", "banner2.jpg")
+        });
+        $("#pcr").hover(function() {
+            $(".banner1 img").attr("src", "banner3.jpg")
+        });
+        $("#raman").hover(function() {
+            $(".banner1 img").attr("src", "banner1.jpg")
+        });
+    </script>
 
 
     <script>
