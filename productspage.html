@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testright</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ppagestyles.css">
+    <script>
+        (function($) { // Begin jQuery
+            $(function() { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function(e) {
+                    $(this).siblings('.nav-dropdown').toggle();
+                    // Close one dropdown when selecting another
+                    $('.nav-dropdown').not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function() {
+                    $('.nav-dropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#specs-navbar-label').click(function() {
+                    $('.container ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#specs-navbar-label').on('click', function() {
+                    this.classList.toggle('active');
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
+</head>
+
+<body>
+
+    <!-- SECTION 1 NAVBAR, BACKGROUND IMAGE AND INFORMATION -->
+    <div class="back-image">
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#!"><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+                </div>
+                <nav>
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="./product.html">Products</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Applications</a>
+                            <ul class="nav-dropdown">
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                                <li>
+                                    <a href="#!">LOREM IPSUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">Customers</a>
+
+                        </li>
+                        <li>
+                            <a href="#!">About us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Resources</a>
+
+                        </li>
+                        <li>
+                            <a href="#!" class="contact-b"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <div class="back-text-container">
+            <div class="back-text">
+                <h4>AGERA</h4>
+                <h2>Agera Spectrometer</h2>
+                <p>Simultaneously measure color, quantify gloss, and store the image in one simple measurement—with a spectrophotometer that offers exceptional flexibility, ease of use, and unprecedented value.</p>
+                <a href="#about" class="arrow"><i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section class="specs-navbar-section">
+        <div class="specs-nav-section-inner">
+            <div class="container">
+                <div class="specs-navbar-wrap"><a class="specs-navbar-label" id="specs-navbar-label">Agera</a>
+                    <ul class="specs-navbar">
+                        <li class="product-price">Starting at $19,750</li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#specs">Product Specifications</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                        <li><a href="#related-documents">Related Documents</a></li>
+                    </ul>
+                    <a class="ButtonLink btn btn-outline product-quote-btn" href="https://www.hunterlab.com/contact/" target=""><span>Get a quote</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF NAV  AND NAV FIXED SCROLL SECTION -->
+
+    <!--START OF CARDS 1ST SECTION -->
+
+
+    <div class="wrapper1" id="about">
+        <div class="products">
+            <h2> PRIZM SPEC SPECTROMETER </h2>
+            <p>Prizm range of specrometers by TestRight offers affordable and flexible spectrometers, with options of detection range from 200 to 1100 nm. It can be used in Absorbance, Transmittance, Reflectance, Irradiance, Color, Raman and Fluorescence
+                measurements.
+            </p>
+        </div>
+
+        <div class="container1">
+            <main class="grid1 reveal">
+                <article>
+                    <div class="card">
+                        <h3>PRIZM SPEC</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <h3>PRIZM SPEC-HD</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <h3>PRIZM SPEC-ECO</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- END OF 1ST CARDS SECTION  -->
+
+    <!-- START OF 2ND CARD SECTION-->
+
+    <div class="wrapper1" id="about">
+        <div class="products">
+            <h2> PRIZM ABS SPECTROPHOTOMETER </h2>
+            <p>For users looking for an advanced spectrophotometer at an affordable price, TestRight offers the SPEC ABS range. Whether its testing conventional liquid samples in cuvette or thin films and solid samples SPEC ABS provides full flexibility
+                to carry out your measurements.
+            </p>
+        </div>
+
+        <div class="container1">
+            <main class="grid2 reveal">
+                <article class="cards">
+                    <div class="card">
+                        <h3>PRIZM ABS -VIS</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article class="cards">
+                    <div class="card">
+                        <h3>PRIZM ABS -UV</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article class="cards">
+                    <div class="card">
+                        <h3>PRIZM ABS -VIS -NIR</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article class="cards">
+                    <div class="card">
+                        <h3>PRIZM ABS -UV -VIS</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article class="video">
+                    <div class="y-video">
+                        <iframe class="y-videoframe" width="100%" height="350px" src="https://www.youtube.com/embed/q8drKAm9jGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </main>
+
+        </div>
+
+    </div>
+
+    <!-- END OF CARDS 2ND SECTION -->
+
+
+
+
+    <!-- START OF 3RD SECTION -->
+    <div class="wrapper1" id="about">
+        <div class="products">
+            <h2> PRIZM FLUORO FLUOROMETER </h2>
+            <p>TestRight’s PRIZM FLUORO is a compact fluorometer that is a sensitive and flexible solution for a fraction of the cost of a traditional spectrofluorimeter.<br> All The Products Are Available With An Optional Built-In Touchscreen Minicomputer
+                With Wi-Fi.
+            </p>
+        </div>
+
+        <div class="container1">
+            <main class="grid1 reveal">
+                <article>
+                    <div class="card">
+                        <h3>PRIZM FLUORO</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <h3>PRIZM FLUORO MOD</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+
+            </main>
+
+        </div>
+
+    </div>
+    <!-- END OF THIRD CARDS SECTION-->
+
+
+
+
+    <!-- START OF 4TH  CARDS  SECTION -->
+    <div class="wrapper1" id="about">
+        <div class="products">
+            <h2> PRIZM RAMAN </h2>
+            <p>Real-time and accurate identification of an unknown substance is accomplished by comparing its unique Raman spectrum of molecular vibrations (molecular “fingerprint”) to Raman spectra of reference substances stored in the spectral database.
+                Prizm Raman performs identification of substances through walls of sealed bags, transparent bottles, vials, and ampoules. The ease of use, single-hand operation, small size and weight of Prizm Raman enables express chemical analysis of
+                substances. Results are displayed within seconds and can be accessed via an intuitive user interface. The data are retrieved remotely via the USB port.
+            </p>
+        </div>
+
+        <div class="container1">
+            <main class="grid1 reveal">
+                <article>
+                    <div class="card">
+                        <h3>PRIZM FLUORO</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+                <article>
+                    <div class="card">
+                        <h3>PRIZM FLUORO MOD</h3>
+                        <img src="./11.png" alt="">
+                        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                    <p>The world is color. For companies, color consistency is a key indicator of quality, safety, and brand integrity. Getting it right means everything. And as industry pioneers, we know better than anyone. And as industry pioneers, we
+                        know better than anyone.</p>
+                </article>
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <section class="flex-2">
+        <div class="container3">
+            <div class="row-card">
+                <h5>CUSTOMER STORIES</h5>
+                <h2>What do roof shingles, ketchup, and cat litter all have in common?</h2>
+                <p>HunterLab. We can measure the color in just about anything—ensuring product quality, performance, and consistency.</p>
+                <button> EXPLORE APPLICATIONS</button>
+            </div>
+            <div class="row-card">
+                <h5>BLOG</h5>
+                <h2>Helpful how-tos, factoids, and advice. In other words, our blog.</h2>
+                <p>With new topics updated regularly, there’s always a reason to come back.</p>
+                <a href=""><button> Take Me There </button></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- START OF CONNECT -->
+    <div class="container6">
+        <div class="left-sec">
+            <div class="connect">
+                <h1>CONNECT</h1>
+            </div>
+            <h2>We’ve worked with thousands of companies, but you’ll feel like our one and only.</h2>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+            <button><a href="">Book Demo</a></button>
+        </div>
+        <div class="right-sec">
+            <form action="#" name="contact_form">
+                <input name="full_name" type="text" required placeholder="Enter Your Full Name" />
+                <br>
+                <input name="email" type="email" required placeholder="Enter Your Email" />
+                <br>
+                <input name="mobile" type="tel" required placeholder="Enter Your Mobile No." />
+                <br>
+                <textarea name="message" cols="35" rows="7" placeholder="Please type your message ..."></textarea>
+                <div class="center">
+                    <input type="submit" value="Contact Us">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- END OF CONNECT-->
+    <footer>
+        <div class="flex-foot">
+            <div class="card3">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="card3">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="card3">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                    <li><a href="">Lorem Ipsum</a></li>
+                </ul>
+            </div>
+            <div class="card3">
+                <a href="https://www.testright.in/" class="logo"><img src="logo_png.png" class="res-image" alt="LOGO"></a>
+                <h5><a href="tel:+91 9716608806">+91 97166 08806</a></h5>
+                <h4>TESTRIGHT PVT. LTD.<br> 204, SECTOR 9, VASUNDHARA,<br> GHAZIABAD, UP - 201012, INDIA
+                </h4>
+                <h5>Get In Touch</h5>
+                <div class="social-button">
+                    <a href="" class="social-button1"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="social-button2"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <div class="lower-footer">
+        <h4><span>&#169;</span> 2021 TESTRIGHT</h4>
+    </div>
